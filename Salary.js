@@ -1,4 +1,4 @@
-//NHIF
+
 
 function calculateDeduction(grossPay) {
 
@@ -80,7 +80,7 @@ function calculateDeduction(grossPay) {
 
  
 
-  //NSSF
+  
 
   function calculatePensionablePayTier(pay) {
 
@@ -90,7 +90,7 @@ function calculateDeduction(grossPay) {
 
  
 
- //Tax rates
+ 
 
  function calculateTaxRate(monthlyTaxablePay) {
 
@@ -118,13 +118,11 @@ function calculateDeduction(grossPay) {
 
   }
 
-  //Calculation of net salary
-
     function calculateNetSalary(salary, benefits){
 
     var monthlyTaxablePay = salary
 
-    var deductTax = calculateTaxRate(monthlyTaxablePay)// %
+    var deductTax = calculateTaxRate(monthlyTaxablePay)
 
     var grossPay = salary - ((deductTax / 100) * salary)
 
@@ -146,8 +144,8 @@ function calculateDeduction(grossPay) {
 
  
 
- var salary = parseInt("7000")//input gross salsary
+ var salary = parseInt("7000")
 
- var benefits = parseInt("800")// input benefits
+ var benefits = parseInt("800")
 
  calculateNetSalary(salary, benefits)
